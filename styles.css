@@ -33,3 +33,40 @@
     background-color: #5e0099; /* Specific dark purple color code for hover */
     color: white;
 }
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto; /* Centers the section horizontally with top and bottom margin of 20px */
+    padding: 20px;
+    background-color: #fff;
+    width: 60%;
+    border: 2px solid purple; /* Add a purple border */
+}
+
+
+.content {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.image {
+    width: 50%; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    background-image: url('images/logo.JPG');
+    background-size: contain; /* Scale the image to fit the content box, aspect ratio is preserved */
+    background-position: center;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+  }
+  
+
+.buttons {
+    display: flex;
+    gap: 10px; /* Adjust the space between buttons as needed */
+    margin-top: 20px;
+    justify-content: center; /* Center-align the buttons horizontally */
+}
+
