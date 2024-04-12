@@ -44,6 +44,9 @@
     background-color: #fff;
     width: 60%;
     border: 2px solid purple; /* Add a purple border */
+    margin: -60px auto 60px; /* Adjusted to pull the section upwards */
+    padding: 20px;
+
 }
 
 
@@ -61,7 +64,16 @@
     background-position: center;
     background-repeat: no-repeat; /* Prevent the image from repeating */
   }
-  
+  .btn-purple {
+    background-color: purple;
+    color: white;
+    border: none; /* Optional: removes default button border */
+}
+
+.btn-purple:hover {
+    background-color: #a300a3; /* Slightly lighter or darker purple for hover */
+}
+
 
 .buttons {
     display: flex;
@@ -70,3 +82,122 @@
     justify-content: center; /* Center-align the buttons horizontally */
 }
 
+.images1{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('images/257e3f2d.jpg'); /* Make sure this URL is correct */
+    background-attachment: fixed;
+}
+
+.service-card {
+    position: relative;
+    height: 350px; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    transition: opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.service-card:hover .service-card-body {
+    opacity: 1;
+}
+
+.service-description, .service-button {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+}
+
+.service-card:hover .service-description,
+.service-card:hover .service-button {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear, opacity 0.5s linear;
+}
+
+.btn-service-purple {
+    background-color: purple; /* Sets the background color to purple */
+    color: white; /* Sets the text color to white */
+    border: none; /* Optional: Removes any border */
+}
+
+.btn-service-purple:hover {
+    background-color: #a300a3; /* A slightly lighter or darker purple for hover */
+    color: white;
+}
+
+
+
+.circle-icon img {
+    width: 140px; /* Adjust size as needed */
+    height: 140px; /* Adjust size as needed */
+    object-fit: cover; /* Keeps the aspect ratio, might crop the image */
+  }
+  
+  /* Optional: Center the icons if they're not filling their circles */
+  .circle-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 15px; /* Space below the icon */
+  }
+  
+  /* Style adjustments for the heading */
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  /* Style adjustments for the sub-description */
+  .text-muted {
+    font-size: 0.875rem;
+  }
+
+  .images2{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('images/257e3f2d.jpg'); /* Make sure this URL is correct */
+    background-attachment: fixed;
+  }
+
+  .card {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    margin-bottom: 20px; /* Adds space below the card */
+}
+
+.card-body {
+    padding: 20px; /* Ensures padding inside the card */
+}
+
+.card-title {
+    color: #333; /* Ensures the title is visible */
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666; /* Ensures the text is readable */
+}
+
+footer {
+    border-top: 5px solid purple; /* Adds a purple border at the top */
+}
