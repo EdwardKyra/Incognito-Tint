@@ -201,3 +201,87 @@
 footer {
     border-top: 5px solid purple; /* Adds a purple border at the top */
 }
+
+/* about page */
+.images3 {
+    /* image */
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('images/257e3f2d.jpg'); /* Make sure this URL is correct */
+    background-attachment: fixed;
+    /* text */
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Add this line if you want the text and button stacked */
+}
+
+.container h2 {
+    color: #333; /* Dark grey color for headings */
+}
+.container p {
+    color: #666; /* Light grey color for paragraphs */
+}
+
+.images4 {
+    position: relative;
+    width: 100%;
+    height: 550px; /* Adjust based on your content */
+    background-image: url('images/257e3f2d.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 60%; /* Width of the overlay */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 20px; /* Padding inside the overlay */
+    overflow-y: auto; /* Allows scrolling if content is longer than the container */
+}
+
+.overlay-content{
+        padding: 20px;
+        max-width: 800px; /* or any width you prefer */
+        margin: 0 auto; /* This centers the overlay content */
+        color: white;
+    }
+
+.faq {
+    background-color: purple; /* Red background for the question part */
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.faq-title {
+    display: flex;
+    justify-content: space-between; /* This will push the arrow to the right */
+    align-items: center;
+    padding: 10px; /* Add some space inside the red part */
+}
+
+.arrow {
+    transition: transform 0.3s ease; /* Smooth transition for the arrow */
+}
+
+.faq h3 {
+    margin: 0; /* Adjust as needed */
+}
+
+.faq p {
+    display: none; /* Hidden by default */
+    background-color: white; /* White background for the answer part */
+    color: black; /* Black color for the text */
+    padding: 10px; /* Add some space inside the white part */
+    margin-top: 0; /* Remove the default margin */
+    border-top: none; /* No border needed between question and answer */
+}
