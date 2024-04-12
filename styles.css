@@ -2,13 +2,14 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-.images{
+/* home */
+.images {
     /* image */
     width: 100%;
     height: 400px;
     background-position: center;
     background-size: cover;
-    background-image: url(images/257e3f2d.jpg);
+    background-image: url('images/257e3f2d.jpg'); /* Make sure this URL is correct */
     background-attachment: fixed;
     /* text */
     color: black;
@@ -17,4 +18,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; /* Add this line if you want the text and button stacked */
+}
+
+.images .btn-purple {
+    background-color: purple;
+    color: white;
+    padding: 12px 24px;  /* Increase padding for a larger button */
+    font-size: 18px;     /* Increase font size for larger text */
+    border-radius: 5px;  /* Optional: round the corners a bit */
+}
+
+.images .btn-purple:hover {
+    background-color: #5e0099; /* Specific dark purple color code for hover */
+    color: white;
 }
