@@ -285,3 +285,101 @@ footer {
     margin-top: 0; /* Remove the default margin */
     border-top: none; /* No border needed between question and answer */
 }
+
+/* contact page  */
+.images5 {
+    /* image */
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('images/257e3f2d.jpg'); /* Make sure this URL is correct */
+    background-attachment: fixed;
+    /* text */
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Add this line if you want the text and button stacked */
+}
+
+.contact-section {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 30px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+}
+
+.icon-button {
+    background-color: purple; /* Example button color */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 80px; /* Set the width of the button */
+    height: 80px; /* Set the height of the button */
+    display: flex; /* To center contents */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.icon-button img {
+    width: 100%; /* Make image fill the button */
+    height: 100%; /* Maintain aspect ratio */
+    object-fit: contain; /* Prevent distortion of the image */
+}
+
+.icon-button:hover {
+    background-color: rgba(139, 0, 90, 0.381); /* Darker shade on hover */
+}
+
+.icon-button i {
+    color: #fff;
+    font-size: 1.5em; /* Bigger icons */
+}
+
+.text-content {
+    margin-left: 10px; /* Space between the button and the text */
+}
+
+.contact-section a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.contact-section p:last-of-type {
+    margin-top: 20px;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    height: 100%; /* Full height of the container if needed */
+    margin: 0 auto; /* Additional vertical margin if needed */
+}
+
+iframe {
+    margin-top: 20px; /* Space above the iframe */
+    margin-bottom: 20px; /* Space below the iframe */
+    max-width: 100%; /* Ensures the iframe is responsive and fits its container */
+}
