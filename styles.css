@@ -32,9 +32,6 @@ body {
 
 
 /* home */
-
-
-
 .container.text-center h3 {
     color: black; /* Sets text color to white */
 }
@@ -126,16 +123,26 @@ body {
     background-attachment: fixed;
 }
 
-.service-card {
+.container .row {
+    margin-left: -15px; /* Adding negative margin equal to the padding to maintain alignment */
+    margin-right: -15px; /* Adding negative margin equal to the padding to maintain alignment */
+  }
+  
+  .container .row .col {
+    padding: 15px; /* This will create spacing between your columns */
+  }
+  
+  .service {
     position: relative;
-    height: 350px; /* Adjust height as needed */
+    height: 400px; /* Adjust as needed */
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-}
-
-.service-card-body {
+    margin-bottom: 30px; /* Adds space between the rows of services, adjust as needed */
+    margin-top: 30px;
+  }
+  
+  .service-info {
     position: absolute;
     top: 0;
     left: 0;
@@ -143,42 +150,30 @@ body {
     bottom: 0;
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     color: white;
-    transition: opacity 0.5s ease;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-}
-
-.service-card:hover .service-card-body {
-    opacity: 1;
-}
-
-.service-description, .service-button {
-    visibility: hidden;
+    justify-content: center;
     opacity: 0;
-    transition: visibility 0s linear 0.5s, opacity 0.5s linear;
-}
-
-.service-card:hover .service-description,
-.service-card:hover .service-button {
-    visibility: visible;
+    transition: opacity 0.5s ease;
+    padding: 15px; /* This adds padding inside your .service-info to prevent text from touching the edges */
+  }
+  
+  .service:hover .service-info {
     opacity: 1;
-    transition: visibility 0s linear, opacity 0.5s linear;
-}
-
-.btn-service-purple {
-    background-color: purple; /* Sets the background color to purple */
-    color: white; /* Sets the text color to white */
-    border: none; /* Optional: Removes any border */
-}
-
-.btn-service-purple:hover {
-    background-color: #a300a3; /* A slightly lighter or darker purple for hover */
-    color: white;
-}
-
+  }
+  
+  .btn-primary {
+    background-color: #6a0dad; /* Making the button purple */
+    border-color: #6a0dad; /* Update border color if your button has a border */
+  }
+  
+  /* Optionally, change the button color on hover to a different shade */
+  .btn-primary:hover {
+    background-color: #7c1cbd;
+    border-color: #7c1cbd;
+  }
+  
 .circle-icon img {
     width: 140px; /* Adjust size as needed */
     height: 140px; /* Adjust size as needed */
