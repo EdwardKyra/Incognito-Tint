@@ -32,6 +32,13 @@ body {
 
 
 /* home */
+
+
+
+.container.text-center h3 {
+    color: black; /* Sets text color to white */
+}
+
 .images {
     /* image */
     width: 100%;
@@ -73,11 +80,10 @@ body {
     background-color: #fff;
     width: 60%;
     border: 2px solid purple; /* Add a purple border */
-    margin: -60px auto 60px; /* Adjusted to pull the section upwards */
+    /* margin: -60px auto 60px; Adjusted to pull the section upwards */
     padding: 20px;
-
+    border: 6px solid purple; /* Increased the thickness for better visibility */
 }
-
 
 .content {
     width: 100%;
@@ -173,8 +179,6 @@ body {
     color: white;
 }
 
-
-
 .circle-icon img {
     width: 140px; /* Adjust size as needed */
     height: 140px; /* Adjust size as needed */
@@ -219,12 +223,11 @@ body {
 }
 
 .card-title {
-    color: #333; /* Ensures the title is visible */
+    color: #333 !important; /* Ensures the title is visible */
 }
 
 .card-text {
-    font-size: 1rem;
-    color: #666; /* Ensures the text is readable */
+    color: #000 !important; /* Sets text color to black */
 }
 
 footer {
@@ -314,10 +317,10 @@ footer.bg-light .nav-link {
 }
 
 .container h2 {
-    color: #333; /* Dark grey color for headings */
+    color: white; /* Dark grey color for headings */
 }
 .container p {
-    color: #666; /* Light grey color for paragraphs */
+    color: white; /* Light grey color for paragraphs */
 }
 
 .images4 {
@@ -376,6 +379,12 @@ footer.bg-light .nav-link {
     padding: 10px; /* Add some space inside the white part */
     margin-top: 0; /* Remove the default margin */
     border-top: none; /* No border needed between question and answer */
+}
+
+#carouselExampleControls {
+    padding-top: 30px; /* Adjust the value as needed */
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* contact page  */
