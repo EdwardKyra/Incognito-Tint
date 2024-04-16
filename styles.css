@@ -345,6 +345,9 @@ footer.bg-light .nav-link {
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
     padding: 20px; /* Padding inside the overlay */
     overflow-y: auto; /* Allows scrolling if content is longer than the container */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 .overlay-content{
